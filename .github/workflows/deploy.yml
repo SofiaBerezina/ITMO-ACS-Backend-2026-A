@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/lab3
+            cd "$HOME/ITMO-ACS-Backend-2026-A/БР1.2/Березина Софья/labs/lab3"
             git pull origin main
             sudo docker compose down
             sudo docker compose up -d --build
